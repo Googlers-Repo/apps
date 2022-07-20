@@ -61,10 +61,16 @@ while len(contents) > 0:
                 "versionName": getProp("versionName"),
                 "versionCode": getProp("versionCode"),
             }
+            
+            def getReadme():
+                if getProp("readme"):
+                    return getProp("readme", r"{Mirror=(.*?):Branch=(.*?):File=(.*?)}", r"https://raw.githubusercontent.com/\1/\2/\3")
+                else:
+                    return f"https://raw.githubusercontent.com/{repo.full_name}/{repo.default_branch}/{file_content.path}/README.md"
 
             apps = {
                 "apk_url":  getProp("download"),
-                "readme_url": f"https://raw.githubusercontent.com/{repo.full_name}/{repo.default_branch}/{file_content.path}/README.md",
+                "readme_url": getReadme(),
                 "prop": details,
             }
 
