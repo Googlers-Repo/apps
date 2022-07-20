@@ -1,6 +1,7 @@
 import sys
 import json
 import os
+import regex
 from github import Github
 
 # Configuration
@@ -50,7 +51,8 @@ while len(contents) > 0:
 
             def getProp(name, replace="", replaceValue=""):
                 try:
-                    return moduleprop[name].replace(replace, replaceValue)
+                    tmp = moduleprop[name]
+                    return regex.sub(replace, replaceValue, tmp)
                 except:
                     return None
 
