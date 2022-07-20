@@ -60,6 +60,7 @@ while len(contents) > 0:
                 "package": getProp("package"),
                 "versionName": getProp("versionName"),
                 "versionCode": getProp("versionCode"),
+                "description": getProp("description"),
             }
             
             def getReadme():
