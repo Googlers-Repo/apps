@@ -63,7 +63,7 @@ while len(contents) > 0:
             }
             
             def getReadme():
-                if getProp("readme"):
+                if getProp("readme") != None:
                     return getProp("readme", r"{Mirror=(.*?):Branch=(.*?):File=(.*?)}", r"https://raw.githubusercontent.com/\1/\2/\3")
                 else:
                     return f"https://raw.githubusercontent.com/{repo.full_name}/{repo.default_branch}/{file_content.path}/README.md"
