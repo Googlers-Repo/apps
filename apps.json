@@ -17,11 +17,11 @@
             }
         },
         {
-            "apk_url": null,
-            "readme_url": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/mmrl/README.md",
+            "apk_url": "https://github.com/DerGoogler/MMRL/releases",
+            "readme_url": "{Mirror=DerGoogler/MMRL:Branch=master:File=README.md}",
             "prop": {
                 "name": "MMRL",
-                "icon": null,
+                "icon": "https://github.com/DerGoogler/MMRL/blob/master/Android/app/src/main/ic_launcher-playstore.png?raw=true",
                 "package": "com.dergoogler.mmrl",
                 "versionName": "1.4.1",
                 "versionCode": "141"
