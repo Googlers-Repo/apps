@@ -3,3 +3,4 @@ package=com.android.youtube
 versionCode=100
 versionName=1.0.0
 icon={localURL}/68747470733a2f2f6e6974726174696e652e6e65742f706f7374732f6175746f2d70792d746f2d6578652f666561747572652e706e67.png
+description=We like to spam with ads
