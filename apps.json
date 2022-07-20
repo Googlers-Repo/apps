@@ -1,0 +1,42 @@
+{
+    "last_update": 1658146279000,
+    "name": "Googlers Store Repo",
+    "website": "https://dergoogler.com/repo",
+    "support": "https://t.me/The_Googler",
+    "donate": null,
+    "apps": [
+        {
+            "apk_url": null,
+            "readme_url": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/foxmmm/README.md",
+            "prop": {
+                "name": "FoxMMM",
+                "icon": null,
+                "package": "com.fox2code.magiskmanager",
+                "versionName": "1.0.0",
+                "versionCode": "100"
+            }
+        },
+        {
+            "apk_url": null,
+            "readme_url": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/mmrl/README.md",
+            "prop": {
+                "name": "MMRL",
+                "icon": null,
+                "package": "com.dergoogler.mmrl",
+                "versionName": "1.4.1",
+                "versionCode": "141"
+            }
+        },
+        {
+            "apk_url": null,
+            "readme_url": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/youtube/README.md",
+            "prop": {
+                "name": "YouTube",
+                "icon": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/youtube/68747470733a2f2f6e6974726174696e652e6e65742f706f7374732f6175746f2d70792d746f2d6578652f666561747572652e706e67.png",
+                "package": "com.android.youtube",
+                "versionName": "1.0.0",
+                "versionCode": "100"
+            }
+        }
+    ]
+}
