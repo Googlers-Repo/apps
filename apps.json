@@ -7,7 +7,7 @@
     "apps": [
         {
             "apk_url": "https://github.com/Fox2Code/FoxMagiskModuleManager/releases",
-            "readme_url": "https://raw.githubusercontent.com/Fox2Code/FoxMagiskModuleManager/master/README.md",
+            "readme_url": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/foxmmm/README.md",
             "prop": {
                 "name": "FoxMMM",
                 "icon": "https://github.com/Fox2Code/FoxMagiskModuleManager/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
