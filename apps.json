@@ -13,7 +13,8 @@
                 "icon": "https://github.com/Fox2Code/FoxMagiskModuleManager/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
                 "package": "com.fox2code.mmm",
                 "versionName": "0.5.6",
-                "versionCode": "100"
+                "versionCode": "100",
+                "description": null
             }
         },
         {
@@ -24,7 +25,8 @@
                 "icon": "https://github.com/DerGoogler/MMRL/blob/master/Android/app/src/main/ic_launcher-playstore.png?raw=true",
                 "package": "com.dergoogler.mmrl",
                 "versionName": "1.4.1",
-                "versionCode": "141"
+                "versionCode": "141",
+                "description": null
             }
         },
         {
@@ -35,7 +37,8 @@
                 "icon": "https://raw.githubusercontent.com/Googlers-Magisk-Repo/store-index/master/youtube/68747470733a2f2f6e6974726174696e652e6e65742f706f7374732f6175746f2d70792d746f2d6578652f666561747572652e706e67.png",
                 "package": "com.android.youtube",
                 "versionName": "1.0.0",
-                "versionCode": "100"
+                "versionCode": "100",
+                "description": "We like to spam with ads"
             }
         }
     ]
