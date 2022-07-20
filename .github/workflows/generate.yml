@@ -19,6 +19,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install PyGithub
+          pip install re
       
       - name: Generate JSON
         run: |
