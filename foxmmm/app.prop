@@ -1,5 +1,7 @@
 name=FoxMMM
-package=com.fox2code.magiskmanager
+icon=https://github.com/Fox2Code/FoxMagiskModuleManager/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true
+package=com.fox2code.mmm
 versionCode=100
-versionName=1.0.0
-readme={Mirror:Fox2Code/FoxMagiskModuleManager:Branch=master:File=README.md}
+versionName=0.5.6
+readme={Mirror=Fox2Code/FoxMagiskModuleManager:Branch=master:File=README.md}
+download=https://github.com/Fox2Code/FoxMagiskModuleManager/releases
