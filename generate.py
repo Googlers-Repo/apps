@@ -1,3 +1,4 @@
+import re
 import sys
 import json
 import os
@@ -56,26 +57,75 @@ while len(contents) > 0:
                 except:
                     return None
 
+            repoconf = {}
+            try:
+                # repo.conf can override app.prop properties
+                repo_config_raw = repo.get_contents(
+                    f"{file_content.path}/repo.conf").decoded_content.decode("UTF-8")
+
+                for line in repo_config_raw.splitlines():
+                    if "=" not in line:
+                        continue
+                    lhs, rhs = line.split("=", 1)
+                    repoconf[lhs] = rhs
+            except:
+                repoconf = None
+
+            def getRepoConf(name, replace="", replaceValue=""):
+                try:
+                    tmp = repoconf[name]
+                    return regex.sub(replace, replaceValue, tmp)
+                except:
+                    return None
+
+            # If an repo is specified, then the app.prop description gets overridden
+
+            def getDescription():
+                if getRepoConf("repo") != None:
+                    return g.get_repo(getRepoConf("repo")).description
+                else:
+                    return getProp("description")
+
             details = {
                 "name": getProp("name"),
                 "icon": getProp("icon", "{localURL}", f"https://raw.githubusercontent.com/{repo.full_name}/{repo.default_branch}/{file_content.path}"),
                 "package": getProp("package"),
                 "versionName": getProp("versionName"),
                 "versionCode": getProp("versionCode"),
-                "description": getProp("description"),
+                "description": getDescription(),
             }
-            
+
             def getReadme():
-                if getProp("readme") != None:
-                    return getProp("readme", r"{Mirror=(.*?):Branch=(.*?):File=(.*?)}", r"https://raw.githubusercontent.com/\1/\2/\3")
+                if getRepoConf("readme") != None:
+                    return getRepoConf("readme", r"{Mirror=(.*?):Branch=(.*?):File=(.*?)}", r"https://raw.githubusercontent.com/\1/\2/\3")
                 else:
                     return f"https://raw.githubusercontent.com/{repo.full_name}/{repo.default_branch}/{file_content.path}/README.md"
 
+            def getDownloadLink():
+                if getRepoConf("repo") != None:
+                    get_latest_release = g.get_repo(getRepoConf(
+                        "repo")).get_releases()[0].get_assets()
+                    for release in get_latest_release:
+                        return release.browser_download_url
+                else:
+                    return getProp("download")
+
             apps = {
-                "apk_url":  getProp("download"),
+                "apk_url":  getDownloadLink(),
                 "readme_url": getReadme(),
                 "prop": details,
+                "contributors": [],
             }
+
+            if getRepoConf("repo") != None:
+                repo_of_app = g.get_repo(getRepoConf("repo"))
+                contributors_count = repo_of_app.get_stats_contributors()
+                for const in contributors_count:
+                    apps["contributors"].append({
+                        "name": const.author.login,
+                        "avatar": const.author.avatar_url,
+                        "contributions_count": const.author.contributions
+                    })
 
             # Append to skeleton
             meta["apps"].append(apps)
