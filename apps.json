@@ -6,13 +6,13 @@
     "donate": null,
     "apps": [
         {
-            "apk_url": null,
-            "readme_url": "{Mirror:Fox2Code/FoxMagiskModuleManager:Branch=master:File=README.md}",
+            "apk_url": "https://github.com/Fox2Code/FoxMagiskModuleManager/releases",
+            "readme_url": "{Mirror=Fox2Code/FoxMagiskModuleManager:Branch=master:File=README.md}",
             "prop": {
                 "name": "FoxMMM",
-                "icon": null,
-                "package": "com.fox2code.magiskmanager",
-                "versionName": "1.0.0",
+                "icon": "https://github.com/Fox2Code/FoxMagiskModuleManager/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+                "package": "com.fox2code.mmm",
+                "versionName": "0.5.6",
                 "versionCode": "100"
             }
         },
