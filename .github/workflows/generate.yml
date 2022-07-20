@@ -32,3 +32,4 @@ jobs:
           git add apps.json
           git commit -sm "Update apps.json" || true
           git push || true
+
