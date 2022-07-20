@@ -2,3 +2,4 @@ name=FoxMMM
 package=com.fox2code.magiskmanager
 versionCode=100
 versionName=1.0.0
+readme={Mirror:Fox2Code/FoxMagiskModuleManager}
