@@ -1,0 +1,7 @@
+name=Magisk Delta (Stable)
+package=io.github.huskydg.magisk
+# Follow link to seem more information
+icon=https://upload.wikimedia.org/wikipedia/commons/b/b8/Magisk_Logo.png
+versionName=d2f6ccbd
+versionCode=25201
+download=https://github.com/HuskyDG/magisk-files/raw/main/app-release.apk
