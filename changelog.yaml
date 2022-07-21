@@ -1,0 +1,10 @@
+version: 1.2.5
+changes: |
+  # What's new?
+
+  - Images in markdown files gettig better handled.
+  - If `repo` prop in `repo.conf` is declared, then will you get up to 5 latest releases from the repo.
+  - Assets showing now the size
+  - fixes and improvements
+
+  Open [Magisk](https://repo.dergoogler.com/apps/?package=com.topjohnwu.magisk) page to see an example
