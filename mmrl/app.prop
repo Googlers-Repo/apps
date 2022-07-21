@@ -3,5 +3,3 @@ package=com.dergoogler.mmrl
 versionCode=141
 versionName=1.4.1
 icon=https://github.com/DerGoogler/MMRL/blob/master/Android/app/src/main/ic_launcher-playstore.png?raw=true
-readme={Mirror=DerGoogler/MMRL:Branch=master:File=README.md}
-download=https://github.com/DerGoogler/MMRL/releases
