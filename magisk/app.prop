@@ -1,0 +1,6 @@
+name=Magisk (Stable)
+package=com.topjohnwu.magisk
+# Follow link to seem more information
+icon=https://upload.wikimedia.org/wikipedia/commons/b/b8/Magisk_Logo.png
+versionName=25.2
+versionCode=25201
