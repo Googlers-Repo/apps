@@ -1,0 +1,25 @@
+{
+  "@global": {
+    ".Store-Toolbar, .Store-Header": {
+      "backgroundColor": "orange"
+    },
+    ".Store-Backbutton > span > svg": {
+      "fill": "black"
+    },
+    ".Store-Toolbar-Title, .Store-Header-Title, .Store-Version": {
+      "color": "black"
+    },
+    "ons-fab.fab--bottom__right": {
+      "backgroundColor": "orange"
+    },
+    "ons-fab.fab--bottom__right > span > svg": {
+      "fill": "black"
+    },
+    ".Store-Download-Button": {
+      "color": "black"
+    },
+    ".markdown-body-light a": {
+      "color": "orange"
+    }
+  }
+}
