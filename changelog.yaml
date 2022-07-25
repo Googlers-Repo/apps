@@ -1,5 +1,15 @@
 version: Changelog
 changes: |
+  # 1.2.7
+
+  - Assets showes now the corret file size
+  - Added Acklowments
+  - Issue tags gets also rendered in assets
+  - Mentions getting also rendered
+  - Screen on desktop looks more like phone
+  - Added button to download the latest release
+  - Added styled store pages
+
   # 1.0.6
 
   - App are now sorted `[A-Z]`
